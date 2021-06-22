@@ -1,0 +1,196 @@
+h1,
+h2 {
+  font-weight: lighter;
+  text-align: center;
+  color: ivory;
+  text-shadow: 1.5px 8px 18px whitesmoke;
+}
+
+h1 {
+  position: relative;
+  bottom: 20px;
+  right: 6px;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 130px;
+  position: absolute;
+  top: 198px;
+  right: -6px;
+  margin: -40px;
+  padding-top: 30px;
+}
+ul {
+  color: ivory;
+  list-style: none;
+  font-size: large;
+  font-weight: lighter;
+}
+
+hr {
+  color: ivory;
+}
+
+.container {
+  max-width: 740px;
+  height: auto;
+  margin-top: 20px;
+  padding: 30px 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 15px;
+  background-image: url("https://images.unsplash.com/photo-1569978237660-a20ee3bfa98b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=462&q=80");
+}
+.time-is-money {
+  position: relative;
+  margin-top: -45px;
+  top: -12px;
+  right: 5px;
+  text-align: center;
+  font-size: 18px;
+  color: ivory;
+  font-weight: lighter;
+}
+
+.speed {
+  position: relative;
+  top: 130px;
+  font-size: 15px;
+  color: ivory;
+  text-shadow: 1.5px 8px 18px whitesmoke;
+}
+
+.cf {
+  font-size: 50px;
+  position: relative;
+  top: -40px;
+  text-decoration: none;
+}
+
+.cf:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  font-size: 50px;
+  position: relative;
+  top: -40px;
+}
+
+.descript {
+  font-size: 40px;
+}
+.mb-3 {
+  width: 31%;
+  margin-bottom: 10px;
+  margin-top: 200px;
+  border: 3px solid #cca181;
+  border-radius: 15px;
+  border-style: ridge;
+  background-color: white;
+  opacity: 0.7;
+  transition: 0.5s;
+  color: #cca181;
+}
+
+.mb-3:focus {
+  border: 3px solid #cca181;
+}
+
+.search-button {
+  margin-right: 10px;
+}
+
+.btn-warning {
+  margin-bottom: 25px;
+  border-radius: 15px;
+  background: transparent;
+  opacity: 0.9;
+  color: whitesmoke;
+  text-shadow: 1.5px 10px 18px whitesmoke;
+  box-shadow: 1px 1px 2px whitesmoke;
+}
+
+.btn-warning:hover {
+  cursor: pointer;
+  border-radius: white;
+  background-color: transparent;
+  color: ivory;
+  transition: 0.7s;
+  border: whitesmoke;
+}
+
+.forecast {
+  text-align: center;
+  color: ivory;
+  font-weight: lighter;
+  font-size: 20px;
+  border: 1px double ivory;
+  border-width: 1px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 40px;
+  text-shadow: 1.5px 8px 18px whitesmoke;
+}
+
+.row {
+  padding: 20px;
+}
+
+.time-icons {
+  margin-top: 15px;
+  margin-left: 40px;
+  text-shadow: 1.5px 8px 18px whitesmoke;
+}
+
+.degrees {
+  margin-top: -50px;
+  margin-left: 30px;
+  text-shadow: 1.5px 8px 18px whitesmoke;
+}
+
+.bi-snow2 {
+  position: relative;
+  left: 10%;
+}
+.bi-wind {
+  position: relative;
+  left: 10%;
+}
+.bi-tornado {
+  position: relative;
+  left: 10%;
+}
+
+.rain-degrees {
+  position: relative;
+  left: 10%;
+}
+
+.sunshine-degrees {
+  position: relative;
+  right: 22%;
+}
+
+.tornado-degrees {
+  position: relative;
+  right: 25%;
+}
+
+.snow-degrees {
+  position: relative;
+  left: -72%;
+}
+
+.wind-degrees {
+  position: relative;
+  right: 48%;
+}
+
+p.tag {
+  font-family: monospace;
+  font-size: large;
+  text-align: center;
+  text-decoration: none;
+}
