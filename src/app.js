@@ -1,6 +1,6 @@
 
-function formatDate(date) {
-let date = new Date();
+function formatDate(timestamp) {
+let date = new Date(timestamp);
 
 let currentHour =  date.getHours();
 if (currentHour < 10 ){
