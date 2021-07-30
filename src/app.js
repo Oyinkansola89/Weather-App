@@ -46,6 +46,9 @@ function displayWeatherCondition(response) {
  let formattedDate = document.querySelector("#time");
  formattedDate.innerHTML= formatDate(response.data.dt * 1000); //format date call
 
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute("src" , `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
  celsiusTemperature = response.data.main.temp;
 
 }

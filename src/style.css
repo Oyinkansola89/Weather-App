@@ -14,12 +14,12 @@ h1 {
 }
 
 h2 {
-  font-size: 130px;
+  font-size: 120px;
   position: absolute;
   top: 198px;
   right: -6px;
-  margin: -40px;
-  padding-top: 30px;
+  margin: 0px;
+  padding-top: 40px;
 }
 ul {
   color: ivory;
@@ -80,6 +80,12 @@ hr {
 
 .descript {
   font-size: 40px;
+}
+
+.iconic {
+  position: relative;
+  right: -90px;
+  bottom: 100px;
 }
 .mb-3 {
   width: 31%;
