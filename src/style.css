@@ -196,6 +196,10 @@ hr {
   right: 48%;
 }
 
+.lower-temp {
+  opacity: 0.6;
+}
+
 p.tag {
   font-family: monospace;
   font-size: large;
