@@ -111,7 +111,7 @@ hr {
 }
 
 .btn-warning {
-  margin-bottom: 25px;
+  margin-bottom: 80px;
   border-radius: 15px;
   background: transparent;
   opacity: 0.9;
@@ -129,21 +129,23 @@ hr {
   border: whitesmoke;
 }
 
-.forecast {
+.weather-forecast {
+  cursor: pointer;
   text-align: center;
   color: ivory;
   font-weight: lighter;
   font-size: 20px;
-  border: 1px double ivory;
-  border-width: 1px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 40px;
   text-shadow: 1.5px 8px 18px whitesmoke;
+}
+
+.forecast-time {
+  font-size: 14px;
+  opacity: 0.6;
 }
 
 .row {
   padding: 20px;
+  margin-left: 45px;
 }
 
 .time-icons {
@@ -158,45 +160,9 @@ hr {
   text-shadow: 1.5px 8px 18px whitesmoke;
 }
 
-.bi-snow2 {
+.weather-forecast-temperature-min {
   position: relative;
-  left: 10%;
-}
-.bi-wind {
-  position: relative;
-  left: 10%;
-}
-.bi-tornado {
-  position: relative;
-  left: 10%;
-}
-
-.rain-degrees {
-  position: relative;
-  left: 10%;
-}
-
-.sunshine-degrees {
-  position: relative;
-  right: 22%;
-}
-
-.tornado-degrees {
-  position: relative;
-  right: 25%;
-}
-
-.snow-degrees {
-  position: relative;
-  left: -72%;
-}
-
-.wind-degrees {
-  position: relative;
-  right: 48%;
-}
-
-.lower-temp {
+  left: 11%;
   opacity: 0.6;
 }
 
