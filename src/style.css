@@ -107,19 +107,22 @@ hr {
 }
 
 .search-button {
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+.current-location-button {
+  margin-right: 250px;
 }
 
 .btn-warning {
   margin-bottom: 80px;
-  border-radius: 15px;
+  border-radius: 14px;
   background: transparent;
   opacity: 0.9;
   color: whitesmoke;
   text-shadow: 1.5px 10px 18px whitesmoke;
   box-shadow: 1px 1px 2px whitesmoke;
 }
-
 .btn-warning:hover {
   cursor: pointer;
   border-radius: white;
@@ -128,7 +131,6 @@ hr {
   transition: 0.7s;
   border: whitesmoke;
 }
-
 .weather-forecast {
   cursor: pointer;
   text-align: center;
@@ -138,20 +140,9 @@ hr {
   text-shadow: 1.5px 8px 18px whitesmoke;
 }
 
-.forecast-time {
-  font-size: 14px;
-  opacity: 0.6;
-}
-
 .row {
   padding: 20px;
-  margin-left: 45px;
-}
-
-.time-icons {
-  margin-top: 15px;
-  margin-left: 40px;
-  text-shadow: 1.5px 8px 18px whitesmoke;
+  margin-left: 38px;
 }
 
 .degrees {
