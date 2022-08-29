@@ -24,20 +24,17 @@ function formatDate(timestamp) {
   return `${currentDay}, ${currentHour}:${currentMinutes}`;
 }
 
-//CREATING DYNAMIC HTML USING Javascipt"
-
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Mon", "Tues", "Fri", "Sat", "Sun"];
-  days.forEach(
-    (day) =>
-      (forecastHTML =
-        forecastHTML +
-        `<div class="col-2">
+  days.forEach((day) => {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
       <span class="forecast-time"> 15:00  </span>
-                     
-        <div class="weather-forecast-date">Mon</div>
+                      <div class="weather-forecast-date">${day}</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" fill="ivory"
                                 class="bi bi-cloud-drizzle" viewBox="0 0 16 16">
                                 <path
@@ -49,21 +46,22 @@ function displayForecast() {
                             <span class="weather-forecast-temperature-min">
                             6° </span>
                         </div>
-                </div>`)
-  );
+                </div>`;
+  });
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
-//function getForecast(coordinates) {
-//console.log(coordinates);
-//let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-//let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+function getForecast(coordinates) {
+  //console.log(coordinates);
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 
-// console.log(apiUrl);
-//axios.get(apiUrl).then(displayForecast);
-//}
+  //console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayWeatherCondition(response) {
   let city = document.querySelector("#city");
   city.innerHTML = response.data.name;
@@ -88,11 +86,9 @@ function displayWeatherCondition(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 
-  displayForecast(); //call
-
   celsiusTemperature = response.data.main.temp;
 
-  //getForecast(response.data.coord);
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
