@@ -1,3 +1,3 @@
 # Vanilla-Weather-App
 Weather App
-used OpenWeatherMap API
+using OpenWeatherMap API
